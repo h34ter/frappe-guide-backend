@@ -356,3 +356,59 @@ REASON: [why this step]`
     });
   }
 });
+
+app.post('/personalized-guidance', async (req, res) => {
+  try {
+    const { userProfile, goal, userJustClicked, pageUrl, availableElements, stepNumber } = req.body;
+
+    const roleContext = {
+      procurement_manager: { emoji: '📦', language: 'procurement', focus: 'supplier relationships and cost' },
+      warehouse_operator: { emoji: '🏭', language: 'warehouse', focus: 'inventory and stock levels' },
+      accountant: { emoji: '💰', language: 'financial', focus: 'accounts and reconciliation' },
+      retail_owner: { emoji: '🛍️', language: 'retail', focus: 'sales and customer transactions' },
+      manufacturing_manager: { emoji: '⚙️', language: 'manufacturing', focus: 'production and materials' }
+    };
+
+    const ctx = roleContext[userProfile.role] || roleContext.procurement_manager;
+    const industryNote = userProfile.industry === 'manufacturing' ? ' for manufacturing' : '';
+
+    const message = await openai.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: [{
+        role: 'user',
+        content: `You're guiding a ${userProfile.role} named ${userProfile.name} in ${userProfile.industry} industry.
+Goal: "${goal}"${industryNote}
+They just clicked: "${userJustClicked}"
+Available elements: ${availableElements.map(e => e.text).join(', ')}
+
+IMPORTANT: Use ${ctx.language} terminology. Focus on: ${ctx.focus}
+
+Respond EXACTLY in this format:
+NEXT_ELEMENT: [exact button/field text to click]
+INSTRUCTION: [personalized step in their language]
+WHY: [why this matters for their role]`
+      }],
+      max_tokens: 80,
+      temperature: 0.1
+    });
+
+    const text = message.choices[0].message.content;
+    const lines = text.split('\n');
+
+    res.json({
+      nextElement: lines[0]?.split(':')[1]?.trim() || 'Next',
+      personalizedInstruction: lines[1]?.split(':')[1]?.trim() || 'Continue',
+      whyThisStep: lines[2]?.split(':')[1]?.trim() || 'Important step',
+      roleEmoji: ctx.emoji,
+      roleContext: `${userProfile.name} (${userProfile.role})`
+    });
+  } catch (error) {
+    res.json({
+      nextElement: 'Save',
+      personalizedInstruction: 'Save your work',
+      whyThisStep: 'Complete the transaction',
+      roleEmoji: '✓',
+      roleContext: 'Guidance'
+    });
+  }
+});
