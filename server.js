@@ -318,3 +318,41 @@ NEXT_ELEMENT: [exact text of button/link to click]`;
     res.json({ instruction: 'Continue with the next step', nextElement: 'Next' });
   }
 });
+
+app.post('/next-step', async (req, res) => {
+  try {
+    const { goal, visibleElements, currentUrl } = req.body;
+
+    const message = await openai.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: [{
+        role: 'user',
+        content: `Goal: "${goal}"
+Available buttons/fields: ${visibleElements}
+Current page: ${currentUrl}
+
+What's the NEXT exact button/field text to click? Respond in format:
+NEXT_CLICK: [exact text]
+INSTRUCTION: [what this does in 1 line]
+REASON: [why this step]`
+      }],
+      max_tokens: 80,
+      temperature: 0.2
+    });
+
+    const text = message.choices[0].message.content;
+    const lines = text.split('\n');
+
+    res.json({
+      nextClick: lines[0]?.split(':')[1]?.trim() || 'Next',
+      instruction: lines[1]?.split(':')[1]?.trim() || 'Click this',
+      reason: lines[2]?.split(':')[1]?.trim() || 'Proceeding'
+    });
+  } catch (error) {
+    res.json({
+      nextClick: 'New',
+      instruction: 'Click New to continue',
+      reason: 'Starting workflow'
+    });
+  }
+});
