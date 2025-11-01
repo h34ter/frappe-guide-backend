@@ -1,4 +1,4 @@
-// server.js - PRODUCTION GRADE WITH RAG & LEARNING
+// server.js - INTELLIGENT ROUTING ENGINE
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
@@ -8,407 +8,219 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// Session storage (in prod, use Redis/DB)
-const sessions = new Map();
-
-// Frappe Comprehensive Knowledge Base
-const FRAPPE_KNOWLEDGE = {
-  modules: {
-    Buying: {
-      description: 'Manage supplier orders, purchase orders, and procurement',
-      docTypes: ['Purchase Order', 'Purchase Invoice', 'Supplier', 'RFQ'],
-      commonTasks: ['Create PO', 'Track Orders', 'Manage Suppliers', 'Process Invoices']
-    },
-    Selling: {
-      description: 'Manage customer orders and sales',
-      docTypes: ['Sales Order', 'Sales Invoice', 'Customer', 'Quotation'],
-      commonTasks: ['Create SO', 'Track Sales', 'Invoice Customers', 'Manage Quotes']
-    },
-    Stock: {
-      description: 'Manage inventory and warehouse operations',
-      docTypes: ['Stock Entry', 'Item', 'Warehouse', 'Stock Balance'],
-      commonTasks: ['Track Inventory', 'Create Items', 'Stock Transfers', 'Check Levels']
-    },
-    Accounting: {
-      description: 'Financial management and reporting',
-      docTypes: ['Journal Entry', 'Invoice', 'Payment', 'Expense Claim'],
-      commonTasks: ['Create Entries', 'Financial Reports', 'Track Expenses', 'Reconcile']
-    }
+// ============ FRAPPE STATE & CONTEXT DATABASE ============
+const FRAPPE_FLOWS = {
+  'purchase order': {
+    onboarding: true,
+    steps: [
+      { position: 'home', action: 'navigate', target: 'Buying' },
+      { position: 'buying_module', action: 'click', target: 'Purchase Order' },
+      { position: 'po_list', action: 'click', target: 'New' },
+      { position: 'po_form', action: 'fill', target: 'Supplier', required: true },
+      { position: 'po_form', action: 'fill', target: 'Items', required: true },
+      { position: 'po_form', action: 'click', target: 'Save' }
+    ]
   },
-  
-  commonErrors: {
-    'Supplier not found': 'Make sure supplier is created in "Supplier" section first',
-    'Item not available': 'Check if item exists in "Item" master',
-    'Insufficient balance': 'Verify warehouse stock levels',
-    'Validation failed': 'Check all mandatory fields are filled'
-  },
-
-  tips: {
-    'accountant': [
-      'Always reconcile accounts at month end',
-      'Use batch processing for multiple entries',
-      'Set up GL accounts before transactions'
-    ],
-    'warehouse_operator': [
-      'Check stock levels daily',
-      'Use barcodes for faster transfers',
-      'Keep physical stock up to date'
-    ],
-    'meat_shop_owner': [
-      'Track daily sales closely',
-      'Monitor expiry dates',
-      'Update prices regularly'
+  'sales order': {
+    onboarding: true,
+    steps: [
+      { position: 'home', action: 'navigate', target: 'Selling' },
+      { position: 'selling_module', action: 'click', target: 'Sales Order' },
+      { position: 'so_list', action: 'click', target: 'New' },
+      { position: 'so_form', action: 'fill', target: 'Customer', required: true },
+      { position: 'so_form', action: 'fill', target: 'Items', required: true },
+      { position: 'so_form', action: 'click', target: 'Save' }
     ]
   }
 };
 
-// Health check
-app.get('/health', (req, res) => {
-  res.json({ status: 'ok', rag: 'enabled', learning: true });
-});
-
-// Initialize session with user profile
-app.post('/init-session', async (req, res) => {
-  try {
-    const { role, industry, modules, experience } = req.body;
-    
-    const sessionId = Date.now().toString();
-    sessions.set(sessionId, {
-      role,
-      industry,
-      modules,
-      experience,
-      steps_completed: 0,
-      mistakes_made: [],
-      learned_concepts: [],
-      created_at: new Date()
-    });
-
-    res.json({
-      sessionId,
-      message: `Welcome ${role}! I'll guide you through Frappe step by step`,
-      knowledge_base: FRAPPE_KNOWLEDGE
-    });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+const ROLE_GUIDES = {
+  procurement_manager: {
+    terminology: 'procurement',
+    context: 'You manage supplier relationships and control costs',
+    focus_areas: ['Supplier', 'Terms', 'Quantity', 'Cost'],
+    concerns: ['Budget', 'Lead time', 'Quality']
+  },
+  warehouse_operator: {
+    terminology: 'inventory',
+    context: 'You manage physical stock and movements',
+    focus_areas: ['Quantity', 'Location', 'Stock', 'Transfer'],
+    concerns: ['Stock levels', 'Organization', 'Accuracy']
+  },
+  accountant: {
+    terminology: 'financial',
+    context: 'You ensure proper recording and reconciliation',
+    focus_areas: ['Amount', 'GL Account', 'Tax', 'Reference'],
+    concerns: ['Accuracy', 'Reconciliation', 'Compliance']
+  },
+  retail_owner: {
+    terminology: 'sales',
+    context: 'You run your store and manage daily transactions',
+    focus_areas: ['Customer', 'Items', 'Price', 'Payment'],
+    concerns: ['Revenue', 'Customer satisfaction', 'Speed']
   }
-});
+};
 
-// Dynamic workflow generation with RAG
-app.post('/generate-workflow', async (req, res) => {
-  try {
-    const { task, role, experience, sessionId } = req.body;
-    const session = sessions.get(sessionId);
+// ============ DETECT USER STATE ============
+function detectPageState(pageUrl, visibleElements) {
+  const url = pageUrl.toLowerCase();
+  
+  if (url.includes('/home')) return 'home';
+  if (url.includes('/buying')) return 'buying_module';
+  if (url.includes('/purchase-order') && url.includes('/view/')) return 'po_form';
+  if (url.includes('/purchase-order')) return 'po_list';
+  if (url.includes('/selling')) return 'selling_module';
+  if (url.includes('/sales-order') && url.includes('/view/')) return 'so_form';
+  if (url.includes('/sales-order')) return 'so_list';
+  
+  return 'unknown';
+}
 
-    const systemPrompt = `You are an expert Frappe ERP trainer for a ${role} with ${experience} years experience.
-Generate a step-by-step workflow for: "${task}"
-
-Requirements:
-1. Break into 5-8 clear steps
-2. Each step must have: action, selector, validation, error_handling
-3. Adapt complexity to experience level (1-5, where 1 is beginner)
-4. Include role-specific tips
-5. Return valid JSON only
-
-Format:
-{
-  "steps": [
-    {
-      "number": 1,
-      "action": "Click on X module",
-      "selector": "exact CSS selector",
-      "validation": "Check if page loads",
-      "tips": "Why this matters",
-      "errorHandling": "What to do if it fails",
-      "expectedResult": "What should happen"
-    }
-  ],
-  "totalDuration": "5 mins",
-  "difficulty": 2
-}`;
-
-    const message = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      temperature: 0.7,
-      messages: [{
-        role: 'system',
-        content: systemPrompt
-      }, {
-        role: 'user',
-        content: `Generate workflow for: ${task}`
-      }],
-      max_tokens: 1000
-    });
-
-    const workflowText = message.choices[0].message.content;
-    
-    // Parse JSON from response
-    const jsonMatch = workflowText.match(/\{[\s\S]*\}/);
-    const workflow = jsonMatch ? JSON.parse(jsonMatch[0]) : { error: 'Parse failed' };
-
-    // Track in session
-    if (session) {
-      session.workflows_generated = (session.workflows_generated || 0) + 1;
-    }
-
-    res.json(workflow);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: error.message });
-  }
-});
-
-// Smart context-aware guidance
-app.post('/analyze-element', async (req, res) => {
-  try {
-    const { elementText, userRole, currentPhase, sessionId, pageContext } = req.body;
-    const session = sessions.get(sessionId);
-
-    const relevantKnowledge = FRAPPE_KNOWLEDGE.modules[pageContext] || {};
-    const tips = FRAPPE_KNOWLEDGE.tips[userRole] || [];
-
-    const systemPrompt = `You are a Frappe trainer. Context: ${JSON.stringify(relevantKnowledge)}
-Tips for this role: ${tips.join(', ')}
-
-User is on phase ${currentPhase}. Keep explanations SHORT and role-appropriate.`;
-
-    const message = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [{
-        role: 'system',
-        content: systemPrompt
-      }, {
-        role: 'user',
-        content: `Explain "${elementText}" for a ${userRole} in 1 sentence`
-      }],
-      max_tokens: 80
-    });
-
-    const guidance = message.choices[0].message.content;
-
-    // Track learning
-    if (session) {
-      session.learned_concepts.push(elementText);
-    }
-
-    res.json({ guidance });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-
-// Error detection and adaptive guidance
-app.post('/handle-error', async (req, res) => {
-  try {
-    const { error, action, role, sessionId } = req.body;
-    const session = sessions.get(sessionId);
-
-    // Check if common error
-    const commonFix = FRAPPE_KNOWLEDGE.commonErrors[error];
-    if (commonFix) {
-      if (session) session.mistakes_made.push(error);
-      return res.json({
-        solution: commonFix,
-        type: 'common',
-        nextStep: 'Try again with the tip above'
-      });
-    }
-
-    // Use AI for uncommon errors
-    const message = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [{
-        role: 'user',
-        content: `In Frappe ERP, user (${role}) got error: "${error}" while trying to: "${action}". What should they do next? Be brief.`
-      }],
-      max_tokens: 100
-    });
-
-    res.json({
-      solution: message.choices[0].message.content,
-      type: 'adaptive'
-    });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-
-// Track user progress and adapt
-app.post('/track-progress', async (req, res) => {
-  try {
-    const { sessionId, stepsCompleted, mistakesMade, timeSpent } = req.body;
-    const session = sessions.get(sessionId);
-
-    if (session) {
-      session.steps_completed = stepsCompleted;
-      session.mistakes_made = mistakesMade;
-      session.time_spent = timeSpent;
-
-      // Adaptive difficulty
-      const errorRate = mistakesMade.length / Math.max(stepsCompleted, 1);
-      let recommendation = '';
-
-      if (errorRate > 0.5) {
-        recommendation = 'Consider slowing down and reviewing basics';
-      } else if (stepsCompleted > 10 && errorRate < 0.1) {
-        recommendation = 'You\'re doing great! Ready for advanced workflows?';
-      }
-
-      res.json({
-        progress: {
-          stepsCompleted,
-          errorRate: (errorRate * 100).toFixed(1) + '%',
-          recommendation
-        }
-      });
-    }
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-
-// Session analytics
-app.get('/session/:sessionId', (req, res) => {
-  const session = sessions.get(req.params.sessionId);
-  if (session) {
-    res.json(session);
-  } else {
-    res.status(404).json({ error: 'Session not found' });
-  }
-});
-
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`Frappe Guide Backend running on ${PORT}`));
-
-
-app.post('/ai-guide', async (req, res) => {
-  try {
-    const { goal, context, step, history } = req.body;
-
-    const prompt = `You are helping a user accomplish: "${goal}"
-
-Current page:
-- URL: ${context.url}
-- Visible buttons: ${context.visibleButtons.join(', ')}
-- Visible inputs: ${context.visibleInputs.map(i => i.name).join(', ')}
-
-Step ${step}. What should the user do NEXT? Respond ONLY in this format:
-INSTRUCTION: [What to do in 1 sentence]
-NEXT_ELEMENT: [exact text of button/link to click]`;
-
-    const message = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [{ role: 'user', content: prompt }],
-      max_tokens: 100,
-      temperature: 0.3
-    });
-
-    const response = message.choices[0].message.content;
-    const lines = response.split('\n');
-    
-    res.json({
-      instruction: lines[0]?.split(':')[1]?.trim() || 'Click the next button',
-      nextElement: lines[1]?.split(':')[1]?.trim() || goal.split(' ')[0]
-    });
-  } catch (error) {
-    res.json({ instruction: 'Continue with the next step', nextElement: 'Next' });
-  }
-});
-
-app.post('/next-step', async (req, res) => {
-  try {
-    const { goal, visibleElements, currentUrl } = req.body;
-
-    const message = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [{
-        role: 'user',
-        content: `Goal: "${goal}"
-Available buttons/fields: ${visibleElements}
-Current page: ${currentUrl}
-
-What's the NEXT exact button/field text to click? Respond in format:
-NEXT_CLICK: [exact text]
-INSTRUCTION: [what this does in 1 line]
-REASON: [why this step]`
-      }],
-      max_tokens: 80,
-      temperature: 0.2
-    });
-
-    const text = message.choices[0].message.content;
-    const lines = text.split('\n');
-
-    res.json({
-      nextClick: lines[0]?.split(':')[1]?.trim() || 'Next',
-      instruction: lines[1]?.split(':')[1]?.trim() || 'Click this',
-      reason: lines[2]?.split(':')[1]?.trim() || 'Proceeding'
-    });
-  } catch (error) {
-    res.json({
-      nextClick: 'New',
-      instruction: 'Click New to continue',
-      reason: 'Starting workflow'
-    });
-  }
-});
-
+// ============ PERSONALIZED GUIDANCE ENGINE ============
 app.post('/personalized-guidance', async (req, res) => {
   try {
     const { userProfile, goal, userJustClicked, pageUrl, availableElements, stepNumber } = req.body;
 
-    const roleContext = {
-      procurement_manager: { emoji: '📦', language: 'procurement', focus: 'supplier relationships and cost' },
-      warehouse_operator: { emoji: '🏭', language: 'warehouse', focus: 'inventory and stock levels' },
-      accountant: { emoji: '💰', language: 'financial', focus: 'accounts and reconciliation' },
-      retail_owner: { emoji: '🛍️', language: 'retail', focus: 'sales and customer transactions' },
-      manufacturing_manager: { emoji: '⚙️', language: 'manufacturing', focus: 'production and materials' }
-    };
+    // 1. DETECT WHERE USER IS
+    const currentState = detectPageState(pageUrl, availableElements);
+    
+    // 2. GET WORKFLOW FOR THIS GOAL
+    const workflow = FRAPPE_FLOWS[goal.toLowerCase()] || FRAPPE_FLOWS['purchase order'];
+    const currentStep = workflow.steps[Math.min(stepNumber, workflow.steps.length - 1)];
+    
+    // 3. GET ROLE-SPECIFIC CONTEXT
+    const roleGuide = ROLE_GUIDES[userProfile.role] || ROLE_GUIDES.procurement_manager;
 
-    const ctx = roleContext[userProfile.role] || roleContext.procurement_manager;
-    const industryNote = userProfile.industry === 'manufacturing' ? ' for manufacturing' : '';
+    // 4. BUILD SMART PROMPT FOR AI
+    const systemPrompt = `You are an onboarding coach for someone who has NEVER used Frappe before.
+    
+User: ${userProfile.name} (${userProfile.role})
+Industry: ${userProfile.industry}
+Goal: ${goal}
+Step: ${stepNumber + 1}
+
+Their context: ${roleGuide.context}
+What matters to them: ${roleGuide.focus_areas.join(', ')}
+Their concerns: ${roleGuide.concerns.join(', ')}
+
+Current position in workflow:
+- Page: ${currentState}
+- Current step target: ${currentStep.target}
+- Action needed: ${currentStep.action}
+
+INSTRUCTIONS FOR YOU:
+1. You're NOT explaining Frappe concepts - you're COACHING someone through a task
+2. Use SIMPLE, DIRECT language - NOT formal training tone
+3. Start each instruction with "Next, " so it feels like continuous guidance
+4. Explain the WHY in their business context, not technical jargon
+5. If they're filling a field, explain what to put there in THEIR language
+6. If they're navigating, explain what each section does in THEIR context
+
+Create a response that feels like a colleague sitting next to them saying "Here's what we do next..."`;
+
+    const userPrompt = `The user just clicked: "${userJustClicked}"
+
+Current page shows: ${availableElements.slice(0, 15).map(e => e.text).join(', ')}
+
+What should they do NEXT? Be specific and conversational.
+
+Format:
+NEXT_ACTION: [exact button/field name]
+YOUR_INSTRUCTION: [conversational coaching, not training]
+WHY_THIS_MATTERS: [business context reason, not technical]`;
 
     const message = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
-      messages: [{
-        role: 'user',
-        content: `You're guiding a ${userProfile.role} named ${userProfile.name} in ${userProfile.industry} industry.
-Goal: "${goal}"${industryNote}
-They just clicked: "${userJustClicked}"
-Available elements: ${availableElements.map(e => e.text).join(', ')}
-
-IMPORTANT: Use ${ctx.language} terminology. Focus on: ${ctx.focus}
-
-Respond EXACTLY in this format:
-NEXT_ELEMENT: [exact button/field text to click]
-INSTRUCTION: [personalized step in their language]
-WHY: [why this matters for their role]`
-      }],
-      max_tokens: 80,
-      temperature: 0.1
+      system: systemPrompt,
+      messages: [{ role: 'user', content: userPrompt }],
+      temperature: 0.4,
+      max_tokens: 120
     });
 
-    const text = message.choices[0].message.content;
-    const lines = text.split('\n');
+    const response = message.choices[0].message.content;
+    const lines = response.split('\n');
+
+    const nextAction = lines[0]?.split(':')[1]?.trim() || 'Next';
+    const instruction = lines[1]?.split(':')[1]?.trim() || 'Continue';
+    const whyItMatters = lines[2]?.split(':')[1]?.trim() || 'Important step';
+
+    // 5. ADD ONBOARDING CONTEXT IF FIRST TIME
+    let onboardingHint = '';
+    if (stepNumber === 0 && workflow.onboarding) {
+      onboardingHint = `\n\n💡 **First time?** Don't worry - I'll guide you through each step. Just follow the glowing cursor!`;
+    }
 
     res.json({
-      nextElement: lines[0]?.split(':')[1]?.trim() || 'Next',
-      personalizedInstruction: lines[1]?.split(':')[1]?.trim() || 'Continue',
-      whyThisStep: lines[2]?.split(':')[1]?.trim() || 'Important step',
-      roleEmoji: ctx.emoji,
-      roleContext: `${userProfile.name} (${userProfile.role})`
+      nextElement: nextAction,
+      personalizedInstruction: instruction + onboardingHint,
+      whyThisStep: whyItMatters,
+      roleEmoji: getRoleEmoji(userProfile.role),
+      roleContext: `${userProfile.name} • ${userProfile.role}`,
+      pageState: currentState,
+      stepProgress: `${stepNumber + 1}/${workflow.steps.length}`
     });
+
   } catch (error) {
+    console.error(error);
     res.json({
-      nextElement: 'Save',
-      personalizedInstruction: 'Save your work',
-      whyThisStep: 'Complete the transaction',
+      nextElement: 'Continue',
+      personalizedInstruction: 'Keep going - you\'re doing great!',
+      whyThisStep: 'Important step',
       roleEmoji: '✓',
-      roleContext: 'Guidance'
+      roleContext: 'Guidance',
+      pageState: 'unknown',
+      stepProgress: '?'
     });
   }
+});
+
+function getRoleEmoji(role) {
+  const emojis = {
+    procurement_manager: '📦',
+    warehouse_operator: '🏭',
+    accountant: '💰',
+    retail_owner: '🛍️',
+    manufacturing_manager: '⚙️'
+  };
+  return emojis[role] || '✓';
+}
+
+// ============ ONBOARDING QUICK START ============
+app.post('/onboarding-suggestions', (req, res) => {
+  const { role, industry } = req.body;
+
+  const suggestions = {
+    procurement_manager: [
+      'Create a Purchase Order',
+      'Check Supplier List',
+      'Track Purchase Status'
+    ],
+    warehouse_operator: [
+      'Check Stock Levels',
+      'Create Stock Transfer',
+      'View Warehouse'
+    ],
+    accountant: [
+      'Create Journal Entry',
+      'View Financial Reports',
+      'Check Account Balance'
+    ],
+    retail_owner: [
+      'Create Sales Order',
+      'View Daily Sales',
+      'Check Inventory'
+    ]
+  };
+
+  res.json({
+    suggestions: suggestions[role] || suggestions.procurement_manager,
+    greeting: `Welcome! As a ${role}, you can do these tasks in Frappe:`
+  });
+});
+
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`🚀 Intelligent Onboarding System on ${PORT}`);
 });
