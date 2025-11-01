@@ -283,3 +283,38 @@ app.get('/session/:sessionId', (req, res) => {
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Frappe Guide Backend running on ${PORT}`));
+
+
+app.post('/ai-guide', async (req, res) => {
+  try {
+    const { goal, context, step, history } = req.body;
+
+    const prompt = `You are helping a user accomplish: "${goal}"
+
+Current page:
+- URL: ${context.url}
+- Visible buttons: ${context.visibleButtons.join(', ')}
+- Visible inputs: ${context.visibleInputs.map(i => i.name).join(', ')}
+
+Step ${step}. What should the user do NEXT? Respond ONLY in this format:
+INSTRUCTION: [What to do in 1 sentence]
+NEXT_ELEMENT: [exact text of button/link to click]`;
+
+    const message = await openai.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: [{ role: 'user', content: prompt }],
+      max_tokens: 100,
+      temperature: 0.3
+    });
+
+    const response = message.choices[0].message.content;
+    const lines = response.split('\n');
+    
+    res.json({
+      instruction: lines[0]?.split(':')[1]?.trim() || 'Click the next button',
+      nextElement: lines[1]?.split(':')[1]?.trim() || goal.split(' ')[0]
+    });
+  } catch (error) {
+    res.json({ instruction: 'Continue with the next step', nextElement: 'Next' });
+  }
+});
