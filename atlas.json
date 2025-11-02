@@ -1,0 +1,5096 @@
+[
+  {
+    "module": "Core",
+    "type": "module",
+    "label": "Core",
+    "route": "/app/core"
+  },
+  {
+    "module": "Website",
+    "type": "module",
+    "label": "Website",
+    "route": "/app/website"
+  },
+  {
+    "module": "Workflow",
+    "type": "module",
+    "label": "Workflow",
+    "route": "/app/workflow"
+  },
+  {
+    "module": "Email",
+    "type": "module",
+    "label": "Email",
+    "route": "/app/email"
+  },
+  {
+    "module": "Custom",
+    "type": "module",
+    "label": "Custom",
+    "route": "/app/custom"
+  },
+  {
+    "module": "Geo",
+    "type": "module",
+    "label": "Geo",
+    "route": "/app/geo"
+  },
+  {
+    "module": "Desk",
+    "type": "module",
+    "label": "Desk",
+    "route": "/app/desk"
+  },
+  {
+    "module": "Integrations",
+    "type": "module",
+    "label": "Integrations",
+    "route": "/app/integrations"
+  },
+  {
+    "module": "Printing",
+    "type": "module",
+    "label": "Printing",
+    "route": "/app/printing"
+  },
+  {
+    "module": "Contacts",
+    "type": "module",
+    "label": "Contacts",
+    "route": "/app/contacts"
+  },
+  {
+    "module": "Social",
+    "type": "module",
+    "label": "Social",
+    "route": "/app/social"
+  },
+  {
+    "module": "Automation",
+    "type": "module",
+    "label": "Automation",
+    "route": "/app/automation"
+  },
+  {
+    "module": "Accounts",
+    "type": "module",
+    "label": "Accounts",
+    "route": "/app/accounts"
+  },
+  {
+    "module": "CRM",
+    "type": "module",
+    "label": "CRM",
+    "route": "/app/crm"
+  },
+  {
+    "module": "Buying",
+    "type": "module",
+    "label": "Buying",
+    "route": "/app/buying"
+  },
+  {
+    "module": "Projects",
+    "type": "module",
+    "label": "Projects",
+    "route": "/app/projects"
+  },
+  {
+    "module": "Selling",
+    "type": "module",
+    "label": "Selling",
+    "route": "/app/selling"
+  },
+  {
+    "module": "Setup",
+    "type": "module",
+    "label": "Setup",
+    "route": "/app/setup"
+  },
+  {
+    "module": "Manufacturing",
+    "type": "module",
+    "label": "Manufacturing",
+    "route": "/app/manufacturing"
+  },
+  {
+    "module": "Stock",
+    "type": "module",
+    "label": "Stock",
+    "route": "/app/stock"
+  },
+  {
+    "module": "Support",
+    "type": "module",
+    "label": "Support",
+    "route": "/app/support"
+  },
+  {
+    "module": "Utilities",
+    "type": "module",
+    "label": "Utilities",
+    "route": "/app/utilities"
+  },
+  {
+    "module": "Assets",
+    "type": "module",
+    "label": "Assets",
+    "route": "/app/assets"
+  },
+  {
+    "module": "Portal",
+    "type": "module",
+    "label": "Portal",
+    "route": "/app/portal"
+  },
+  {
+    "module": "Maintenance",
+    "type": "module",
+    "label": "Maintenance",
+    "route": "/app/maintenance"
+  },
+  {
+    "module": "Regional",
+    "type": "module",
+    "label": "Regional",
+    "route": "/app/regional"
+  },
+  {
+    "module": "ERPNext Integrations",
+    "type": "module",
+    "label": "ERPNext Integrations",
+    "route": "/app/erpnext integrations"
+  },
+  {
+    "module": "Quality Management",
+    "type": "module",
+    "label": "Quality Management",
+    "route": "/app/quality management"
+  },
+  {
+    "module": "Communication",
+    "type": "module",
+    "label": "Communication",
+    "route": "/app/communication"
+  },
+  {
+    "module": "Telephony",
+    "type": "module",
+    "label": "Telephony",
+    "route": "/app/telephony"
+  },
+  {
+    "module": "Bulk Transaction",
+    "type": "module",
+    "label": "Bulk Transaction",
+    "route": "/app/bulk transaction"
+  },
+  {
+    "module": "Subcontracting",
+    "type": "module",
+    "label": "Subcontracting",
+    "route": "/app/subcontracting"
+  },
+  {
+    "module": "EDI",
+    "type": "module",
+    "label": "EDI",
+    "route": "/app/edi"
+  },
+  {
+    "module": "Email Delivery Service",
+    "type": "module",
+    "label": "Email Delivery Service",
+    "route": "/app/email delivery service"
+  },
+  {
+    "module": "ERPNext Germany",
+    "type": "module",
+    "label": "ERPNext Germany",
+    "route": "/app/erpnext germany"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Accounting",
+    "route": "/app/workspace/Accounting"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Assets",
+    "route": "/app/workspace/Assets"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Build",
+    "route": "/app/workspace/Build"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Buying",
+    "route": "/app/workspace/Buying"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "CRM",
+    "route": "/app/workspace/CRM"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "ERPNext Integrations",
+    "route": "/app/workspace/ERPNext Integrations"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "ERPNext Settings",
+    "route": "/app/workspace/ERPNext Settings"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Financial Reports",
+    "route": "/app/workspace/Financial Reports"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Germany",
+    "route": "/app/workspace/Germany"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Home",
+    "route": "/app/workspace/Home"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Integrations",
+    "route": "/app/workspace/Integrations"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Manufacturing",
+    "route": "/app/workspace/Manufacturing"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Payables",
+    "route": "/app/workspace/Payables"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Projects",
+    "route": "/app/workspace/Projects"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Quality",
+    "route": "/app/workspace/Quality"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Receivables",
+    "route": "/app/workspace/Receivables"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Selling",
+    "route": "/app/workspace/Selling"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Stock",
+    "route": "/app/workspace/Stock"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Support",
+    "route": "/app/workspace/Support"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Tools",
+    "route": "/app/workspace/Tools"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Users",
+    "route": "/app/workspace/Users"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Website",
+    "route": "/app/workspace/Website"
+  },
+  {
+    "module": "Workspace",
+    "type": "workspace",
+    "label": "Welcome Workspace",
+    "route": "/app/workspace/Welcome Workspace"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Account",
+    "route": "/app/account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Account Closing Balance",
+    "route": "/app/account-closing-balance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Accounting Dimension",
+    "route": "/app/accounting-dimension"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Accounting Dimension Detail",
+    "route": "/app/accounting-dimension-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Accounting Dimension Filter",
+    "route": "/app/accounting-dimension-filter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Accounting Period",
+    "route": "/app/accounting-period"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Accounts Settings",
+    "route": "/app/accounts-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Advance Payment Ledger Entry",
+    "route": "/app/advance-payment-ledger-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Advance Tax",
+    "route": "/app/advance-tax"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Advance Taxes and Charges",
+    "route": "/app/advance-taxes-and-charges"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Allowed Dimension",
+    "route": "/app/allowed-dimension"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Allowed To Transact With",
+    "route": "/app/allowed-to-transact-with"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Applicable On Account",
+    "route": "/app/applicable-on-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank",
+    "route": "/app/bank"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Account",
+    "route": "/app/bank-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Account Subtype",
+    "route": "/app/bank-account-subtype"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Account Type",
+    "route": "/app/bank-account-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Clearance",
+    "route": "/app/bank-clearance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Clearance Detail",
+    "route": "/app/bank-clearance-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Guarantee",
+    "route": "/app/bank-guarantee"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Reconciliation Tool",
+    "route": "/app/bank-reconciliation-tool"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Statement Import",
+    "route": "/app/bank-statement-import"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Transaction",
+    "route": "/app/bank-transaction"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Transaction Mapping",
+    "route": "/app/bank-transaction-mapping"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bank Transaction Payments",
+    "route": "/app/bank-transaction-payments"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bisect Accounting Statements",
+    "route": "/app/bisect-accounting-statements"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bisect Nodes",
+    "route": "/app/bisect-nodes"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Budget",
+    "route": "/app/budget"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Budget Account",
+    "route": "/app/budget-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Campaign Item",
+    "route": "/app/campaign-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Cashier Closing",
+    "route": "/app/cashier-closing"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Cashier Closing Payments",
+    "route": "/app/cashier-closing-payments"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Chart of Accounts Importer",
+    "route": "/app/chart-of-accounts-importer"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Cheque Print Template",
+    "route": "/app/cheque-print-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Closed Document",
+    "route": "/app/closed-document"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Cost Center",
+    "route": "/app/cost-center"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Cost Center Allocation",
+    "route": "/app/cost-center-allocation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Cost Center Allocation Percentage",
+    "route": "/app/cost-center-allocation-percentage"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Coupon Code",
+    "route": "/app/coupon-code"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Currency Exchange Settings",
+    "route": "/app/currency-exchange-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Currency Exchange Settings Details",
+    "route": "/app/currency-exchange-settings-details"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Currency Exchange Settings Result",
+    "route": "/app/currency-exchange-settings-result"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Customer Group Item",
+    "route": "/app/customer-group-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Customer Item",
+    "route": "/app/customer-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Discounted Invoice",
+    "route": "/app/discounted-invoice"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dunning",
+    "route": "/app/dunning"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dunning Letter Text",
+    "route": "/app/dunning-letter-text"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dunning Type",
+    "route": "/app/dunning-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Exchange Rate Revaluation",
+    "route": "/app/exchange-rate-revaluation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Exchange Rate Revaluation Account",
+    "route": "/app/exchange-rate-revaluation-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Finance Book",
+    "route": "/app/finance-book"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Fiscal Year",
+    "route": "/app/fiscal-year"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Fiscal Year Company",
+    "route": "/app/fiscal-year-company"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "GL Entry",
+    "route": "/app/gl-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Invoice Discounting",
+    "route": "/app/invoice-discounting"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Tax Template",
+    "route": "/app/item-tax-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Tax Template Detail",
+    "route": "/app/item-tax-template-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Journal Entry",
+    "route": "/app/journal-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Journal Entry Account",
+    "route": "/app/journal-entry-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Journal Entry Template",
+    "route": "/app/journal-entry-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Journal Entry Template Account",
+    "route": "/app/journal-entry-template-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Ledger Health",
+    "route": "/app/ledger-health"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Ledger Health Monitor",
+    "route": "/app/ledger-health-monitor"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Ledger Health Monitor Company",
+    "route": "/app/ledger-health-monitor-company"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Ledger Merge",
+    "route": "/app/ledger-merge"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Ledger Merge Accounts",
+    "route": "/app/ledger-merge-accounts"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Loyalty Point Entry",
+    "route": "/app/loyalty-point-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Loyalty Point Entry Redemption",
+    "route": "/app/loyalty-point-entry-redemption"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Loyalty Program",
+    "route": "/app/loyalty-program"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Loyalty Program Collection",
+    "route": "/app/loyalty-program-collection"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Mode of Payment",
+    "route": "/app/mode-of-payment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Mode of Payment Account",
+    "route": "/app/mode-of-payment-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Monthly Distribution",
+    "route": "/app/monthly-distribution"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Monthly Distribution Percentage",
+    "route": "/app/monthly-distribution-percentage"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Opening Invoice Creation Tool",
+    "route": "/app/opening-invoice-creation-tool"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Opening Invoice Creation Tool Item",
+    "route": "/app/opening-invoice-creation-tool-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Overdue Payment",
+    "route": "/app/overdue-payment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Party Account",
+    "route": "/app/party-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Party Link",
+    "route": "/app/party-link"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Entry",
+    "route": "/app/payment-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Entry Deduction",
+    "route": "/app/payment-entry-deduction"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Entry Reference",
+    "route": "/app/payment-entry-reference"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Gateway Account",
+    "route": "/app/payment-gateway-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Ledger Entry",
+    "route": "/app/payment-ledger-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Order",
+    "route": "/app/payment-order"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Order Reference",
+    "route": "/app/payment-order-reference"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Reconciliation",
+    "route": "/app/payment-reconciliation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Reconciliation Allocation",
+    "route": "/app/payment-reconciliation-allocation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Reconciliation Invoice",
+    "route": "/app/payment-reconciliation-invoice"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Reconciliation Payment",
+    "route": "/app/payment-reconciliation-payment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Request",
+    "route": "/app/payment-request"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Schedule",
+    "route": "/app/payment-schedule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Term",
+    "route": "/app/payment-term"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Terms Template",
+    "route": "/app/payment-terms-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Payment Terms Template Detail",
+    "route": "/app/payment-terms-template-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pegged Currencies",
+    "route": "/app/pegged-currencies"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pegged Currency Details",
+    "route": "/app/pegged-currency-details"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Period Closing Voucher",
+    "route": "/app/period-closing-voucher"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Closing Entry",
+    "route": "/app/pos-closing-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Closing Entry Detail",
+    "route": "/app/pos-closing-entry-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Closing Entry Taxes",
+    "route": "/app/pos-closing-entry-taxes"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Customer Group",
+    "route": "/app/pos-customer-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Field",
+    "route": "/app/pos-field"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Invoice",
+    "route": "/app/pos-invoice"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Invoice Item",
+    "route": "/app/pos-invoice-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Invoice Merge Log",
+    "route": "/app/pos-invoice-merge-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Invoice Reference",
+    "route": "/app/pos-invoice-reference"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Item Group",
+    "route": "/app/pos-item-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Opening Entry",
+    "route": "/app/pos-opening-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Opening Entry Detail",
+    "route": "/app/pos-opening-entry-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Payment Method",
+    "route": "/app/pos-payment-method"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Profile",
+    "route": "/app/pos-profile"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Profile User",
+    "route": "/app/pos-profile-user"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Search Fields",
+    "route": "/app/pos-search-fields"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "POS Settings",
+    "route": "/app/pos-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pricing Rule",
+    "route": "/app/pricing-rule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pricing Rule Brand",
+    "route": "/app/pricing-rule-brand"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pricing Rule Detail",
+    "route": "/app/pricing-rule-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pricing Rule Item Code",
+    "route": "/app/pricing-rule-item-code"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pricing Rule Item Group",
+    "route": "/app/pricing-rule-item-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Process Deferred Accounting",
+    "route": "/app/process-deferred-accounting"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Process Payment Reconciliation",
+    "route": "/app/process-payment-reconciliation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Process Payment Reconciliation Log",
+    "route": "/app/process-payment-reconciliation-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Process Payment Reconciliation Log Allocations",
+    "route": "/app/process-payment-reconciliation-log-allocations"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Process Statement Of Accounts",
+    "route": "/app/process-statement-of-accounts"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Process Statement Of Accounts CC",
+    "route": "/app/process-statement-of-accounts-cc"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Process Statement Of Accounts Customer",
+    "route": "/app/process-statement-of-accounts-customer"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Process Subscription",
+    "route": "/app/process-subscription"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Promotional Scheme",
+    "route": "/app/promotional-scheme"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Promotional Scheme Price Discount",
+    "route": "/app/promotional-scheme-price-discount"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Promotional Scheme Product Discount",
+    "route": "/app/promotional-scheme-product-discount"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "PSOA Cost Center",
+    "route": "/app/psoa-cost-center"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "PSOA Project",
+    "route": "/app/psoa-project"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Invoice",
+    "route": "/app/purchase-invoice"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Invoice Advance",
+    "route": "/app/purchase-invoice-advance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Invoice Item",
+    "route": "/app/purchase-invoice-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Taxes and Charges",
+    "route": "/app/purchase-taxes-and-charges"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Taxes and Charges Template",
+    "route": "/app/purchase-taxes-and-charges-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Repost Accounting Ledger",
+    "route": "/app/repost-accounting-ledger"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Repost Accounting Ledger Items",
+    "route": "/app/repost-accounting-ledger-items"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Repost Accounting Ledger Settings",
+    "route": "/app/repost-accounting-ledger-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Repost Allowed Types",
+    "route": "/app/repost-allowed-types"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Repost Payment Ledger",
+    "route": "/app/repost-payment-ledger"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Repost Payment Ledger Items",
+    "route": "/app/repost-payment-ledger-items"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Invoice",
+    "route": "/app/sales-invoice"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Invoice Advance",
+    "route": "/app/sales-invoice-advance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Invoice Item",
+    "route": "/app/sales-invoice-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Invoice Payment",
+    "route": "/app/sales-invoice-payment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Invoice Timesheet",
+    "route": "/app/sales-invoice-timesheet"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Partner Item",
+    "route": "/app/sales-partner-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Taxes and Charges",
+    "route": "/app/sales-taxes-and-charges"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Taxes and Charges Template",
+    "route": "/app/sales-taxes-and-charges-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Share Balance",
+    "route": "/app/share-balance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Share Transfer",
+    "route": "/app/share-transfer"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Share Type",
+    "route": "/app/share-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Shareholder",
+    "route": "/app/shareholder"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Shipping Rule",
+    "route": "/app/shipping-rule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Shipping Rule Condition",
+    "route": "/app/shipping-rule-condition"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Shipping Rule Country",
+    "route": "/app/shipping-rule-country"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "South Africa VAT Account",
+    "route": "/app/south-africa-vat-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subscription",
+    "route": "/app/subscription"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subscription Invoice",
+    "route": "/app/subscription-invoice"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subscription Plan",
+    "route": "/app/subscription-plan"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subscription Plan Detail",
+    "route": "/app/subscription-plan-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subscription Settings",
+    "route": "/app/subscription-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Group Item",
+    "route": "/app/supplier-group-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Item",
+    "route": "/app/supplier-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Tax Category",
+    "route": "/app/tax-category"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Tax Rule",
+    "route": "/app/tax-rule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Tax Withheld Vouchers",
+    "route": "/app/tax-withheld-vouchers"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Tax Withholding Account",
+    "route": "/app/tax-withholding-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Tax Withholding Category",
+    "route": "/app/tax-withholding-category"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Tax Withholding Rate",
+    "route": "/app/tax-withholding-rate"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Territory Item",
+    "route": "/app/territory-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Transaction Deletion Record Details",
+    "route": "/app/transaction-deletion-record-details"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Unreconcile Payment",
+    "route": "/app/unreconcile-payment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Unreconcile Payment Entries",
+    "route": "/app/unreconcile-payment-entries"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset",
+    "route": "/app/asset"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Activity",
+    "route": "/app/asset-activity"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Capitalization",
+    "route": "/app/asset-capitalization"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Capitalization Asset Item",
+    "route": "/app/asset-capitalization-asset-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Capitalization Service Item",
+    "route": "/app/asset-capitalization-service-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Capitalization Stock Item",
+    "route": "/app/asset-capitalization-stock-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Category",
+    "route": "/app/asset-category"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Category Account",
+    "route": "/app/asset-category-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Depreciation Schedule",
+    "route": "/app/asset-depreciation-schedule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Finance Book",
+    "route": "/app/asset-finance-book"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Maintenance",
+    "route": "/app/asset-maintenance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Maintenance Log",
+    "route": "/app/asset-maintenance-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Maintenance Task",
+    "route": "/app/asset-maintenance-task"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Maintenance Team",
+    "route": "/app/asset-maintenance-team"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Movement",
+    "route": "/app/asset-movement"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Movement Item",
+    "route": "/app/asset-movement-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Repair",
+    "route": "/app/asset-repair"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Repair Consumed Item",
+    "route": "/app/asset-repair-consumed-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Shift Allocation",
+    "route": "/app/asset-shift-allocation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Shift Factor",
+    "route": "/app/asset-shift-factor"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Asset Value Adjustment",
+    "route": "/app/asset-value-adjustment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Depreciation Schedule",
+    "route": "/app/depreciation-schedule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Linked Location",
+    "route": "/app/linked-location"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Location",
+    "route": "/app/location"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Maintenance Team Member",
+    "route": "/app/maintenance-team-member"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Assignment Rule",
+    "route": "/app/assignment-rule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Assignment Rule Day",
+    "route": "/app/assignment-rule-day"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Assignment Rule User",
+    "route": "/app/assignment-rule-user"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Auto Repeat",
+    "route": "/app/auto-repeat"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Auto Repeat Day",
+    "route": "/app/auto-repeat-day"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Milestone",
+    "route": "/app/milestone"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Milestone Tracker",
+    "route": "/app/milestone-tracker"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Reminder",
+    "route": "/app/reminder"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bulk Transaction Log",
+    "route": "/app/bulk-transaction-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bulk Transaction Log Detail",
+    "route": "/app/bulk-transaction-log-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Buying Settings",
+    "route": "/app/buying-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Order",
+    "route": "/app/purchase-order"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Order Item",
+    "route": "/app/purchase-order-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Order Item Supplied",
+    "route": "/app/purchase-order-item-supplied"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Receipt Item Supplied",
+    "route": "/app/purchase-receipt-item-supplied"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Request for Quotation",
+    "route": "/app/request-for-quotation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Request for Quotation Item",
+    "route": "/app/request-for-quotation-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Request for Quotation Supplier",
+    "route": "/app/request-for-quotation-supplier"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier",
+    "route": "/app/supplier"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Quotation",
+    "route": "/app/supplier-quotation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Quotation Item",
+    "route": "/app/supplier-quotation-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Scorecard",
+    "route": "/app/supplier-scorecard"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Scorecard Criteria",
+    "route": "/app/supplier-scorecard-criteria"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Scorecard Period",
+    "route": "/app/supplier-scorecard-period"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Scorecard Scoring Criteria",
+    "route": "/app/supplier-scorecard-scoring-criteria"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Scorecard Scoring Standing",
+    "route": "/app/supplier-scorecard-scoring-standing"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Scorecard Scoring Variable",
+    "route": "/app/supplier-scorecard-scoring-variable"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Scorecard Standing",
+    "route": "/app/supplier-scorecard-standing"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Scorecard Variable",
+    "route": "/app/supplier-scorecard-variable"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Communication Medium",
+    "route": "/app/communication-medium"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Communication Medium Timeslot",
+    "route": "/app/communication-medium-timeslot"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Address",
+    "route": "/app/address"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Address Template",
+    "route": "/app/address-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Contact",
+    "route": "/app/contact"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Contact Email",
+    "route": "/app/contact-email"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Contact Phone",
+    "route": "/app/contact-phone"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Gender",
+    "route": "/app/gender"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Salutation",
+    "route": "/app/salutation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Access Log",
+    "route": "/app/access-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Activity Log",
+    "route": "/app/activity-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Amended Document Naming Settings",
+    "route": "/app/amended-document-naming-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Audit Trail",
+    "route": "/app/audit-trail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Block Module",
+    "route": "/app/block-module"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Comment",
+    "route": "/app/comment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Communication",
+    "route": "/app/communication"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Communication Link",
+    "route": "/app/communication-link"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Custom DocPerm",
+    "route": "/app/custom-docperm"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Custom Role",
+    "route": "/app/custom-role"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Data Export",
+    "route": "/app/data-export"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Data Import",
+    "route": "/app/data-import"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Data Import Log",
+    "route": "/app/data-import-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DefaultValue",
+    "route": "/app/defaultvalue"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Deleted Document",
+    "route": "/app/deleted-document"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DocField",
+    "route": "/app/docfield"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DocPerm",
+    "route": "/app/docperm"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DocShare",
+    "route": "/app/docshare"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DocType",
+    "route": "/app/doctype"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DocType Action",
+    "route": "/app/doctype-action"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DocType Link",
+    "route": "/app/doctype-link"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DocType State",
+    "route": "/app/doctype-state"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Document Naming Rule",
+    "route": "/app/document-naming-rule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Document Naming Rule Condition",
+    "route": "/app/document-naming-rule-condition"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Document Naming Settings",
+    "route": "/app/document-naming-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Document Share Key",
+    "route": "/app/document-share-key"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Domain",
+    "route": "/app/domain"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Domain Settings",
+    "route": "/app/domain-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dynamic Link",
+    "route": "/app/dynamic-link"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Error Log",
+    "route": "/app/error-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "File",
+    "route": "/app/file"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Has Domain",
+    "route": "/app/has-domain"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Has Role",
+    "route": "/app/has-role"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Installed Application",
+    "route": "/app/installed-application"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Installed Applications",
+    "route": "/app/installed-applications"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Language",
+    "route": "/app/language"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Log Setting User",
+    "route": "/app/log-setting-user"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Log Settings",
+    "route": "/app/log-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Logs To Clear",
+    "route": "/app/logs-to-clear"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Module Def",
+    "route": "/app/module-def"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Module Profile",
+    "route": "/app/module-profile"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Navbar Item",
+    "route": "/app/navbar-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Navbar Settings",
+    "route": "/app/navbar-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Package",
+    "route": "/app/package"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Package Import",
+    "route": "/app/package-import"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Package Release",
+    "route": "/app/package-release"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Page",
+    "route": "/app/page"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Patch Log",
+    "route": "/app/patch-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Permission Inspector",
+    "route": "/app/permission-inspector"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Prepared Report",
+    "route": "/app/prepared-report"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Recorder",
+    "route": "/app/recorder"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Recorder Query",
+    "route": "/app/recorder-query"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Recorder Suggested Index",
+    "route": "/app/recorder-suggested-index"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Report",
+    "route": "/app/report"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Report Column",
+    "route": "/app/report-column"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Report Filter",
+    "route": "/app/report-filter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Role",
+    "route": "/app/role"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Role Permission for Page and Report",
+    "route": "/app/role-permission-for-page-and-report"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Role Profile",
+    "route": "/app/role-profile"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "RQ Job",
+    "route": "/app/rq-job"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "RQ Worker",
+    "route": "/app/rq-worker"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Scheduled Job Log",
+    "route": "/app/scheduled-job-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Scheduled Job Type",
+    "route": "/app/scheduled-job-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Scheduler Event",
+    "route": "/app/scheduler-event"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Server Script",
+    "route": "/app/server-script"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Session Default",
+    "route": "/app/session-default"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Session Default Settings",
+    "route": "/app/session-default-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "SMS Parameter",
+    "route": "/app/sms-parameter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "SMS Settings",
+    "route": "/app/sms-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Submission Queue",
+    "route": "/app/submission-queue"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Success Action",
+    "route": "/app/success-action"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "System Settings",
+    "route": "/app/system-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Transaction Log",
+    "route": "/app/transaction-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Translation",
+    "route": "/app/translation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User",
+    "route": "/app/user"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Document Type",
+    "route": "/app/user-document-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Email",
+    "route": "/app/user-email"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Group",
+    "route": "/app/user-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Group Member",
+    "route": "/app/user-group-member"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Invitation",
+    "route": "/app/user-invitation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Permission",
+    "route": "/app/user-permission"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Role",
+    "route": "/app/user-role"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Select Document Type",
+    "route": "/app/user-select-document-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Social Login",
+    "route": "/app/user-social-login"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Type",
+    "route": "/app/user-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "User Type Module",
+    "route": "/app/user-type-module"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Version",
+    "route": "/app/version"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "View Log",
+    "route": "/app/view-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Appointment",
+    "route": "/app/appointment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Appointment Booking Settings",
+    "route": "/app/appointment-booking-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Appointment Booking Slots",
+    "route": "/app/appointment-booking-slots"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Availability Of Slots",
+    "route": "/app/availability-of-slots"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Campaign",
+    "route": "/app/campaign"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Campaign Email Schedule",
+    "route": "/app/campaign-email-schedule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Competitor",
+    "route": "/app/competitor"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Competitor Detail",
+    "route": "/app/competitor-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Contract",
+    "route": "/app/contract"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Contract Fulfilment Checklist",
+    "route": "/app/contract-fulfilment-checklist"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Contract Template",
+    "route": "/app/contract-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Contract Template Fulfilment Terms",
+    "route": "/app/contract-template-fulfilment-terms"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "CRM Note",
+    "route": "/app/crm-note"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "CRM Settings",
+    "route": "/app/crm-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Campaign",
+    "route": "/app/email-campaign"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Lead",
+    "route": "/app/lead"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Lead Source",
+    "route": "/app/lead-source"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Lost Reason Detail",
+    "route": "/app/lost-reason-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Market Segment",
+    "route": "/app/market-segment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Opportunity",
+    "route": "/app/opportunity"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Opportunity Item",
+    "route": "/app/opportunity-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Opportunity Lost Reason",
+    "route": "/app/opportunity-lost-reason"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Opportunity Lost Reason Detail",
+    "route": "/app/opportunity-lost-reason-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Opportunity Type",
+    "route": "/app/opportunity-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Prospect",
+    "route": "/app/prospect"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Prospect Lead",
+    "route": "/app/prospect-lead"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Prospect Opportunity",
+    "route": "/app/prospect-opportunity"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Stage",
+    "route": "/app/sales-stage"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Client Script",
+    "route": "/app/client-script"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Custom Field",
+    "route": "/app/custom-field"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Customize Form",
+    "route": "/app/customize-form"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Customize Form Field",
+    "route": "/app/customize-form-field"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DocType Layout",
+    "route": "/app/doctype-layout"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "DocType Layout Field",
+    "route": "/app/doctype-layout-field"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Property Setter",
+    "route": "/app/property-setter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bulk Update",
+    "route": "/app/bulk-update"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Calendar View",
+    "route": "/app/calendar-view"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Changelog Feed",
+    "route": "/app/changelog-feed"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Console Log",
+    "route": "/app/console-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Custom HTML Block",
+    "route": "/app/custom-html-block"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dashboard",
+    "route": "/app/dashboard"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dashboard Chart",
+    "route": "/app/dashboard-chart"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dashboard Chart Field",
+    "route": "/app/dashboard-chart-field"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dashboard Chart Link",
+    "route": "/app/dashboard-chart-link"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dashboard Chart Source",
+    "route": "/app/dashboard-chart-source"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dashboard Settings",
+    "route": "/app/dashboard-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Desktop Icon",
+    "route": "/app/desktop-icon"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Event",
+    "route": "/app/event"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Event Participants",
+    "route": "/app/event-participants"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Form Tour",
+    "route": "/app/form-tour"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Form Tour Step",
+    "route": "/app/form-tour-step"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Global Search DocType",
+    "route": "/app/global-search-doctype"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Global Search Settings",
+    "route": "/app/global-search-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Kanban Board",
+    "route": "/app/kanban-board"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Kanban Board Column",
+    "route": "/app/kanban-board-column"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "List Filter",
+    "route": "/app/list-filter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "List View Settings",
+    "route": "/app/list-view-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Module Onboarding",
+    "route": "/app/module-onboarding"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Note",
+    "route": "/app/note"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Note Seen By",
+    "route": "/app/note-seen-by"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Notification Log",
+    "route": "/app/notification-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Notification Settings",
+    "route": "/app/notification-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Notification Subscribed Document",
+    "route": "/app/notification-subscribed-document"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Number Card",
+    "route": "/app/number-card"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Number Card Link",
+    "route": "/app/number-card-link"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Onboarding Permission",
+    "route": "/app/onboarding-permission"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Onboarding Step",
+    "route": "/app/onboarding-step"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Onboarding Step Map",
+    "route": "/app/onboarding-step-map"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Route History",
+    "route": "/app/route-history"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "System Console",
+    "route": "/app/system-console"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "System Health Report",
+    "route": "/app/system-health-report"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "System Health Report Errors",
+    "route": "/app/system-health-report-errors"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "System Health Report Failing Jobs",
+    "route": "/app/system-health-report-failing-jobs"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "System Health Report Queue",
+    "route": "/app/system-health-report-queue"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "System Health Report Tables",
+    "route": "/app/system-health-report-tables"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "System Health Report Workers",
+    "route": "/app/system-health-report-workers"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Tag",
+    "route": "/app/tag"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Tag Link",
+    "route": "/app/tag-link"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "ToDo",
+    "route": "/app/todo"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workspace",
+    "route": "/app/workspace"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workspace Chart",
+    "route": "/app/workspace-chart"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workspace Custom Block",
+    "route": "/app/workspace-custom-block"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workspace Link",
+    "route": "/app/workspace-link"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workspace Number Card",
+    "route": "/app/workspace-number-card"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workspace Quick List",
+    "route": "/app/workspace-quick-list"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workspace Shortcut",
+    "route": "/app/workspace-shortcut"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Code List",
+    "route": "/app/code-list"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Common Code",
+    "route": "/app/common-code"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Auto Email Report",
+    "route": "/app/auto-email-report"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Document Follow",
+    "route": "/app/document-follow"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Account",
+    "route": "/app/email-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Domain",
+    "route": "/app/email-domain"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Flag Queue",
+    "route": "/app/email-flag-queue"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Group",
+    "route": "/app/email-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Group Member",
+    "route": "/app/email-group-member"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Queue",
+    "route": "/app/email-queue"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Queue Recipient",
+    "route": "/app/email-queue-recipient"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Rule",
+    "route": "/app/email-rule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Template",
+    "route": "/app/email-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Unsubscribe",
+    "route": "/app/email-unsubscribe"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "IMAP Folder",
+    "route": "/app/imap-folder"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Newsletter",
+    "route": "/app/newsletter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Newsletter Attachment",
+    "route": "/app/newsletter-attachment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Newsletter Email Group",
+    "route": "/app/newsletter-email-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Notification",
+    "route": "/app/notification"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Notification Recipient",
+    "route": "/app/notification-recipient"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Unhandled Email",
+    "route": "/app/unhandled-email"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Business Letter",
+    "route": "/app/business-letter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Business Letter Template",
+    "route": "/app/business-letter-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Business Trip",
+    "route": "/app/business-trip"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Business Trip Accommodation",
+    "route": "/app/business-trip-accommodation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Business Trip Allowance",
+    "route": "/app/business-trip-allowance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Business Trip Journey",
+    "route": "/app/business-trip-journey"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Business Trip Other Expense",
+    "route": "/app/business-trip-other-expense"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Business Trip Region",
+    "route": "/app/business-trip-region"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Business Trip Settings",
+    "route": "/app/business-trip-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "ERPNext Germany Settings",
+    "route": "/app/erpnext-germany-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Religious Denomination",
+    "route": "/app/religious-denomination"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "VAT ID Check",
+    "route": "/app/vat-id-check"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Plaid Settings",
+    "route": "/app/plaid-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Country",
+    "route": "/app/country"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Currency",
+    "route": "/app/currency"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Connected App",
+    "route": "/app/connected-app"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dropbox Settings",
+    "route": "/app/dropbox-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Google Calendar",
+    "route": "/app/google-calendar"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Google Contacts",
+    "route": "/app/google-contacts"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Google Drive",
+    "route": "/app/google-drive"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Google Settings",
+    "route": "/app/google-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Integration Request",
+    "route": "/app/integration-request"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "LDAP Group Mapping",
+    "route": "/app/ldap-group-mapping"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "LDAP Settings",
+    "route": "/app/ldap-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "OAuth Authorization Code",
+    "route": "/app/oauth-authorization-code"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "OAuth Bearer Token",
+    "route": "/app/oauth-bearer-token"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "OAuth Client",
+    "route": "/app/oauth-client"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "OAuth Client Role",
+    "route": "/app/oauth-client-role"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "OAuth Provider Settings",
+    "route": "/app/oauth-provider-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "OAuth Scope",
+    "route": "/app/oauth-scope"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Push Notification Settings",
+    "route": "/app/push-notification-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Query Parameters",
+    "route": "/app/query-parameters"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "S3 Backup Settings",
+    "route": "/app/s3-backup-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Slack Webhook URL",
+    "route": "/app/slack-webhook-url"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Social Login Key",
+    "route": "/app/social-login-key"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Token Cache",
+    "route": "/app/token-cache"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Webhook",
+    "route": "/app/webhook"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Webhook Data",
+    "route": "/app/webhook-data"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Webhook Header",
+    "route": "/app/webhook-header"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Webhook Request Log",
+    "route": "/app/webhook-request-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Maintenance Schedule",
+    "route": "/app/maintenance-schedule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Maintenance Schedule Detail",
+    "route": "/app/maintenance-schedule-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Maintenance Schedule Item",
+    "route": "/app/maintenance-schedule-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Maintenance Visit",
+    "route": "/app/maintenance-visit"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Maintenance Visit Purpose",
+    "route": "/app/maintenance-visit-purpose"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Blanket Order",
+    "route": "/app/blanket-order"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Blanket Order Item",
+    "route": "/app/blanket-order-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM",
+    "route": "/app/bom"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Creator",
+    "route": "/app/bom-creator"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Creator Item",
+    "route": "/app/bom-creator-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Explosion Item",
+    "route": "/app/bom-explosion-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Item",
+    "route": "/app/bom-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Operation",
+    "route": "/app/bom-operation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Scrap Item",
+    "route": "/app/bom-scrap-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Update Batch",
+    "route": "/app/bom-update-batch"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Update Log",
+    "route": "/app/bom-update-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Update Tool",
+    "route": "/app/bom-update-tool"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Website Item",
+    "route": "/app/bom-website-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "BOM Website Operation",
+    "route": "/app/bom-website-operation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Downtime Entry",
+    "route": "/app/downtime-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Job Card",
+    "route": "/app/job-card"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Job Card Item",
+    "route": "/app/job-card-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Job Card Operation",
+    "route": "/app/job-card-operation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Job Card Scheduled Time",
+    "route": "/app/job-card-scheduled-time"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Job Card Scrap Item",
+    "route": "/app/job-card-scrap-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Job Card Time Log",
+    "route": "/app/job-card-time-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Manufacturing Settings",
+    "route": "/app/manufacturing-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Material Request Plan Item",
+    "route": "/app/material-request-plan-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Operation",
+    "route": "/app/operation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Plant Floor",
+    "route": "/app/plant-floor"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Production Plan",
+    "route": "/app/production-plan"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Production Plan Item",
+    "route": "/app/production-plan-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Production Plan Item Reference",
+    "route": "/app/production-plan-item-reference"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Production Plan Material Request",
+    "route": "/app/production-plan-material-request"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Production Plan Material Request Warehouse",
+    "route": "/app/production-plan-material-request-warehouse"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Production Plan Sales Order",
+    "route": "/app/production-plan-sales-order"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Production Plan Sub Assembly Item",
+    "route": "/app/production-plan-sub-assembly-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Routing",
+    "route": "/app/routing"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sub Operation",
+    "route": "/app/sub-operation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Work Order",
+    "route": "/app/work-order"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Work Order Item",
+    "route": "/app/work-order-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Work Order Operation",
+    "route": "/app/work-order-operation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workstation",
+    "route": "/app/workstation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workstation Type",
+    "route": "/app/workstation-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workstation Working Hour",
+    "route": "/app/workstation-working-hour"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Homepage",
+    "route": "/app/homepage"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Homepage Section",
+    "route": "/app/homepage-section"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Homepage Section Card",
+    "route": "/app/homepage-section-card"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Attribute",
+    "route": "/app/website-attribute"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Filter Field",
+    "route": "/app/website-filter-field"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Letter Head",
+    "route": "/app/letter-head"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Network Printer Settings",
+    "route": "/app/network-printer-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Print Format",
+    "route": "/app/print-format"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Print Format Field Template",
+    "route": "/app/print-format-field-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Print Settings",
+    "route": "/app/print-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Print Style",
+    "route": "/app/print-style"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Activity Cost",
+    "route": "/app/activity-cost"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Activity Type",
+    "route": "/app/activity-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Dependent Task",
+    "route": "/app/dependent-task"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Project",
+    "route": "/app/project"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Project Template",
+    "route": "/app/project-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Project Template Task",
+    "route": "/app/project-template-task"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Project Type",
+    "route": "/app/project-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Project Update",
+    "route": "/app/project-update"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Project User",
+    "route": "/app/project-user"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Projects Settings",
+    "route": "/app/projects-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Task",
+    "route": "/app/task"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Task Depends On",
+    "route": "/app/task-depends-on"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Task Type",
+    "route": "/app/task-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Timesheet",
+    "route": "/app/timesheet"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Timesheet Detail",
+    "route": "/app/timesheet-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Non Conformance",
+    "route": "/app/non-conformance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Action",
+    "route": "/app/quality-action"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Action Resolution",
+    "route": "/app/quality-action-resolution"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Feedback",
+    "route": "/app/quality-feedback"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Feedback Parameter",
+    "route": "/app/quality-feedback-parameter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Feedback Template",
+    "route": "/app/quality-feedback-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Feedback Template Parameter",
+    "route": "/app/quality-feedback-template-parameter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Goal",
+    "route": "/app/quality-goal"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Goal Objective",
+    "route": "/app/quality-goal-objective"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Meeting",
+    "route": "/app/quality-meeting"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Meeting Agenda",
+    "route": "/app/quality-meeting-agenda"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Meeting Minutes",
+    "route": "/app/quality-meeting-minutes"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Procedure",
+    "route": "/app/quality-procedure"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Procedure Process",
+    "route": "/app/quality-procedure-process"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Review",
+    "route": "/app/quality-review"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Review Objective",
+    "route": "/app/quality-review-objective"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Import Supplier Invoice",
+    "route": "/app/import-supplier-invoice"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Lower Deduction Certificate",
+    "route": "/app/lower-deduction-certificate"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "South Africa VAT Settings",
+    "route": "/app/south-africa-vat-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "UAE VAT Account",
+    "route": "/app/uae-vat-account"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "UAE VAT Settings",
+    "route": "/app/uae-vat-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Customer",
+    "route": "/app/customer"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Customer Credit Limit",
+    "route": "/app/customer-credit-limit"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Industry Type",
+    "route": "/app/industry-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Installation Note",
+    "route": "/app/installation-note"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Installation Note Item",
+    "route": "/app/installation-note-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Party Specific Item",
+    "route": "/app/party-specific-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Product Bundle",
+    "route": "/app/product-bundle"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Product Bundle Item",
+    "route": "/app/product-bundle-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quotation",
+    "route": "/app/quotation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quotation Item",
+    "route": "/app/quotation-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Order",
+    "route": "/app/sales-order"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Order Item",
+    "route": "/app/sales-order-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Partner Type",
+    "route": "/app/sales-partner-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Team",
+    "route": "/app/sales-team"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Selling Settings",
+    "route": "/app/selling-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "SMS Center",
+    "route": "/app/sms-center"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Authorization Control",
+    "route": "/app/authorization-control"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Authorization Rule",
+    "route": "/app/authorization-rule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Branch",
+    "route": "/app/branch"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Brand",
+    "route": "/app/brand"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Company",
+    "route": "/app/company"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Currency Exchange",
+    "route": "/app/currency-exchange"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Customer Group",
+    "route": "/app/customer-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Department",
+    "route": "/app/department"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Designation",
+    "route": "/app/designation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Driver",
+    "route": "/app/driver"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Driving License Category",
+    "route": "/app/driving-license-category"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Digest",
+    "route": "/app/email-digest"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Email Digest Recipient",
+    "route": "/app/email-digest-recipient"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Employee",
+    "route": "/app/employee"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Employee Education",
+    "route": "/app/employee-education"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Employee External Work History",
+    "route": "/app/employee-external-work-history"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Employee Group",
+    "route": "/app/employee-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Employee Group Table",
+    "route": "/app/employee-group-table"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Employee Internal Work History",
+    "route": "/app/employee-internal-work-history"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Global Defaults",
+    "route": "/app/global-defaults"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Holiday",
+    "route": "/app/holiday"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Holiday List",
+    "route": "/app/holiday-list"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Incoterm",
+    "route": "/app/incoterm"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Group",
+    "route": "/app/item-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Party Type",
+    "route": "/app/party-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Print Heading",
+    "route": "/app/print-heading"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quotation Lost Reason",
+    "route": "/app/quotation-lost-reason"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quotation Lost Reason Detail",
+    "route": "/app/quotation-lost-reason-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Partner",
+    "route": "/app/sales-partner"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Sales Person",
+    "route": "/app/sales-person"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Supplier Group",
+    "route": "/app/supplier-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Target Detail",
+    "route": "/app/target-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Terms and Conditions",
+    "route": "/app/terms-and-conditions"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Territory",
+    "route": "/app/territory"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Transaction Deletion Record",
+    "route": "/app/transaction-deletion-record"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Transaction Deletion Record Item",
+    "route": "/app/transaction-deletion-record-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "UOM",
+    "route": "/app/uom"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "UOM Conversion Factor",
+    "route": "/app/uom-conversion-factor"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Vehicle",
+    "route": "/app/vehicle"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Item Group",
+    "route": "/app/website-item-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Energy Point Log",
+    "route": "/app/energy-point-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Energy Point Rule",
+    "route": "/app/energy-point-rule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Energy Point Settings",
+    "route": "/app/energy-point-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Review Level",
+    "route": "/app/review-level"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Batch",
+    "route": "/app/batch"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Bin",
+    "route": "/app/bin"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Closing Stock Balance",
+    "route": "/app/closing-stock-balance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Customs Tariff Number",
+    "route": "/app/customs-tariff-number"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Delivery Note",
+    "route": "/app/delivery-note"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Delivery Note Item",
+    "route": "/app/delivery-note-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Delivery Settings",
+    "route": "/app/delivery-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Delivery Stop",
+    "route": "/app/delivery-stop"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Delivery Trip",
+    "route": "/app/delivery-trip"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Inventory Dimension",
+    "route": "/app/inventory-dimension"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item",
+    "route": "/app/item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Alternative",
+    "route": "/app/item-alternative"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Attribute",
+    "route": "/app/item-attribute"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Attribute Value",
+    "route": "/app/item-attribute-value"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Barcode",
+    "route": "/app/item-barcode"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Customer Detail",
+    "route": "/app/item-customer-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Default",
+    "route": "/app/item-default"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Manufacturer",
+    "route": "/app/item-manufacturer"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Price",
+    "route": "/app/item-price"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Quality Inspection Parameter",
+    "route": "/app/item-quality-inspection-parameter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Reorder",
+    "route": "/app/item-reorder"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Supplier",
+    "route": "/app/item-supplier"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Tax",
+    "route": "/app/item-tax"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Variant",
+    "route": "/app/item-variant"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Variant Attribute",
+    "route": "/app/item-variant-attribute"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Variant Settings",
+    "route": "/app/item-variant-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Item Website Specification",
+    "route": "/app/item-website-specification"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Landed Cost Item",
+    "route": "/app/landed-cost-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Landed Cost Purchase Receipt",
+    "route": "/app/landed-cost-purchase-receipt"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Landed Cost Taxes and Charges",
+    "route": "/app/landed-cost-taxes-and-charges"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Landed Cost Voucher",
+    "route": "/app/landed-cost-voucher"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Manufacturer",
+    "route": "/app/manufacturer"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Material Request",
+    "route": "/app/material-request"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Material Request Item",
+    "route": "/app/material-request-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Packed Item",
+    "route": "/app/packed-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Packing Slip",
+    "route": "/app/packing-slip"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Packing Slip Item",
+    "route": "/app/packing-slip-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pick List",
+    "route": "/app/pick-list"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pick List Item",
+    "route": "/app/pick-list-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Price List",
+    "route": "/app/price-list"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Price List Country",
+    "route": "/app/price-list-country"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Receipt",
+    "route": "/app/purchase-receipt"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Purchase Receipt Item",
+    "route": "/app/purchase-receipt-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Putaway Rule",
+    "route": "/app/putaway-rule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Inspection",
+    "route": "/app/quality-inspection"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Inspection Parameter",
+    "route": "/app/quality-inspection-parameter"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Inspection Parameter Group",
+    "route": "/app/quality-inspection-parameter-group"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Inspection Reading",
+    "route": "/app/quality-inspection-reading"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quality Inspection Template",
+    "route": "/app/quality-inspection-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Quick Stock Balance",
+    "route": "/app/quick-stock-balance"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Repost Item Valuation",
+    "route": "/app/repost-item-valuation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Serial and Batch Bundle",
+    "route": "/app/serial-and-batch-bundle"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Serial and Batch Entry",
+    "route": "/app/serial-and-batch-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Serial No",
+    "route": "/app/serial-no"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Shipment",
+    "route": "/app/shipment"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Shipment Delivery Note",
+    "route": "/app/shipment-delivery-note"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Shipment Parcel",
+    "route": "/app/shipment-parcel"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Shipment Parcel Template",
+    "route": "/app/shipment-parcel-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Stock Entry",
+    "route": "/app/stock-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Stock Entry Detail",
+    "route": "/app/stock-entry-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Stock Entry Type",
+    "route": "/app/stock-entry-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Stock Ledger Entry",
+    "route": "/app/stock-ledger-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Stock Reconciliation",
+    "route": "/app/stock-reconciliation"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Stock Reconciliation Item",
+    "route": "/app/stock-reconciliation-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Stock Reposting Settings",
+    "route": "/app/stock-reposting-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Stock Reservation Entry",
+    "route": "/app/stock-reservation-entry"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Stock Settings",
+    "route": "/app/stock-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "UOM Category",
+    "route": "/app/uom-category"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "UOM Conversion Detail",
+    "route": "/app/uom-conversion-detail"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Variant Field",
+    "route": "/app/variant-field"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Warehouse",
+    "route": "/app/warehouse"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Warehouse Type",
+    "route": "/app/warehouse-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subcontracting BOM",
+    "route": "/app/subcontracting-bom"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subcontracting Order",
+    "route": "/app/subcontracting-order"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subcontracting Order Item",
+    "route": "/app/subcontracting-order-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subcontracting Order Service Item",
+    "route": "/app/subcontracting-order-service-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subcontracting Order Supplied Item",
+    "route": "/app/subcontracting-order-supplied-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subcontracting Receipt",
+    "route": "/app/subcontracting-receipt"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subcontracting Receipt Item",
+    "route": "/app/subcontracting-receipt-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Subcontracting Receipt Supplied Item",
+    "route": "/app/subcontracting-receipt-supplied-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Issue",
+    "route": "/app/issue"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Issue Priority",
+    "route": "/app/issue-priority"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Issue Type",
+    "route": "/app/issue-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Pause SLA On Status",
+    "route": "/app/pause-sla-on-status"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Service Day",
+    "route": "/app/service-day"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Service Level Agreement",
+    "route": "/app/service-level-agreement"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Service Level Priority",
+    "route": "/app/service-level-priority"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "SLA Fulfilled On Status",
+    "route": "/app/sla-fulfilled-on-status"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Support Search Source",
+    "route": "/app/support-search-source"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Support Settings",
+    "route": "/app/support-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Warranty Claim",
+    "route": "/app/warranty-claim"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Call Log",
+    "route": "/app/call-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Incoming Call Handling Schedule",
+    "route": "/app/incoming-call-handling-schedule"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Incoming Call Settings",
+    "route": "/app/incoming-call-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Telephony Call Type",
+    "route": "/app/telephony-call-type"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Voice Call Settings",
+    "route": "/app/voice-call-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Portal User",
+    "route": "/app/portal-user"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Rename Tool",
+    "route": "/app/rename-tool"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "SMS Log",
+    "route": "/app/sms-log"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Video",
+    "route": "/app/video"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Video Settings",
+    "route": "/app/video-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "About Us Settings",
+    "route": "/app/about-us-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "About Us Team Member",
+    "route": "/app/about-us-team-member"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Blog Category",
+    "route": "/app/blog-category"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Blog Post",
+    "route": "/app/blog-post"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Blog Settings",
+    "route": "/app/blog-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Blogger",
+    "route": "/app/blogger"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Color",
+    "route": "/app/color"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Company History",
+    "route": "/app/company-history"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Contact Us Settings",
+    "route": "/app/contact-us-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Discussion Reply",
+    "route": "/app/discussion-reply"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Discussion Topic",
+    "route": "/app/discussion-topic"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Help Article",
+    "route": "/app/help-article"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Help Category",
+    "route": "/app/help-category"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Marketing Campaign",
+    "route": "/app/marketing-campaign"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Personal Data Deletion Request",
+    "route": "/app/personal-data-deletion-request"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Personal Data Deletion Step",
+    "route": "/app/personal-data-deletion-step"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Personal Data Download Request",
+    "route": "/app/personal-data-download-request"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Portal Menu Item",
+    "route": "/app/portal-menu-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Portal Settings",
+    "route": "/app/portal-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Social Link Settings",
+    "route": "/app/social-link-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Top Bar Item",
+    "route": "/app/top-bar-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Web Form",
+    "route": "/app/web-form"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Web Form Field",
+    "route": "/app/web-form-field"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Web Form List Column",
+    "route": "/app/web-form-list-column"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Web Page",
+    "route": "/app/web-page"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Web Page Block",
+    "route": "/app/web-page-block"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Web Page View",
+    "route": "/app/web-page-view"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Web Template",
+    "route": "/app/web-template"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Web Template Field",
+    "route": "/app/web-template-field"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Meta Tag",
+    "route": "/app/website-meta-tag"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Route Meta",
+    "route": "/app/website-route-meta"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Route Redirect",
+    "route": "/app/website-route-redirect"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Script",
+    "route": "/app/website-script"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Settings",
+    "route": "/app/website-settings"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Sidebar",
+    "route": "/app/website-sidebar"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Sidebar Item",
+    "route": "/app/website-sidebar-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Slideshow",
+    "route": "/app/website-slideshow"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Slideshow Item",
+    "route": "/app/website-slideshow-item"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Theme",
+    "route": "/app/website-theme"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Website Theme Ignore App",
+    "route": "/app/website-theme-ignore-app"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workflow",
+    "route": "/app/workflow"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workflow Action",
+    "route": "/app/workflow-action"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workflow Action Master",
+    "route": "/app/workflow-action-master"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workflow Action Permitted Role",
+    "route": "/app/workflow-action-permitted-role"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workflow Document State",
+    "route": "/app/workflow-document-state"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workflow State",
+    "route": "/app/workflow-state"
+  },
+  {
+    "module": "Global",
+    "type": "doctype",
+    "label": "Workflow Transition",
+    "route": "/app/workflow-transition"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "permission-manager",
+    "route": "/app/permission-manager"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "sales-funnel",
+    "route": "/app/sales-funnel"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "backups",
+    "route": "/app/backups"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "stock-balance",
+    "route": "/app/stock-balance"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "setup-wizard",
+    "route": "/app/setup-wizard"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "print-format-builder",
+    "route": "/app/print-format-builder"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "bom-comparison-tool",
+    "route": "/app/bom-comparison-tool"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "leaderboard",
+    "route": "/app/leaderboard"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "user-profile",
+    "route": "/app/user-profile"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "point-of-sale",
+    "route": "/app/point-of-sale"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "print",
+    "route": "/app/print"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "warehouse-capacity-summary",
+    "route": "/app/warehouse-capacity-summary"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "dashboard-view",
+    "route": "/app/dashboard-view"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "print-format-builder-beta",
+    "route": "/app/print-format-builder-beta"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "workflow-builder",
+    "route": "/app/workflow-builder"
+  },
+  {
+    "module": "Page",
+    "type": "page",
+    "label": "visual-plant-floor",
+    "route": "/app/visual-plant-floor"
+  }
+]
