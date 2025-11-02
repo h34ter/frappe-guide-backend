@@ -1,4 +1,4 @@
-/* ──────────  server.js – Frappe Guide Backend v6  ────────── */
+/* ──────────  server.js – Frappe Guide Backend v6 FINAL  ────────── */
 const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
@@ -27,13 +27,11 @@ app.post("/analyze-job", async (req, res) => {
   try {
     const { job = "", industry = "" } = req.body;
     const jobLower = job.toLowerCase();
-
     const related = ATLAS.filter(
       x =>
         x.module?.toLowerCase().includes(jobLower) ||
         x.label?.toLowerCase().includes(jobLower)
     );
-
     const modules = [...new Set(related.map(r => r.module))].slice(0, 5);
     const examples = related
       .slice(0, 30)
@@ -47,9 +45,7 @@ Relevant modules: ${modules.join(", ") || "Buying, Selling, Accounting"}
 Example features:
 ${examples}
 
-1. Choose the most relevant workflow.
-2. Write a 5-step tutorial for this user with CSS selectors.
-
+Write a 5-step tutorial with CSS selectors.
 Format:
 TUTORIAL: [step1|step2|step3|step4|step5]
 SELECTORS: [sel1|sel2|sel3|sel4|sel5]
