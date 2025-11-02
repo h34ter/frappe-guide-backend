@@ -1,4 +1,4 @@
-/* ──────────  server.js  – Frappe Guide Backend v4  ────────── */
+/* ──────────  server.js  – Frappe Guide Backend v5  ────────── */
 const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
@@ -11,50 +11,47 @@ app.use(express.json());
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-/*────────────────  Load live Atlas  ────────────────*/
+/*──────────  Load live Atlas  ──────────*/
 let ATLAS = [];
 try {
   ATLAS = JSON.parse(fs.readFileSync("./atlas.json", "utf8"));
   console.log(`📦  Loaded ${ATLAS.length} Atlas records`);
 } catch {
-  console.warn("⚠️  atlas.json not found — /analyze-job will use fallback");
+  console.warn("⚠️  atlas.json not found — continuing without Atlas");
 }
 
-/*────────────────  /analyze-job  ────────────────*/
+/*──────────  /analyze-job  ──────────*/
 app.post("/analyze-job", async (req, res) => {
   try {
-    const { job, industry } = req.body;
+    const { job = "", industry = "" } = req.body;
+    const jobLower = job.toLowerCase();
 
-    /* find modules most related to the job from Atlas */
-    const lowerJob = (job || "").toLowerCase();
+    // find top-related modules and doctypes
     const related = ATLAS.filter(
       x =>
-        x.module?.toLowerCase().includes(lowerJob) ||
-        x.label?.toLowerCase().includes(lowerJob)
+        x.module?.toLowerCase().includes(jobLower) ||
+        x.label?.toLowerCase().includes(jobLower) ||
+        x.type?.toLowerCase().includes(jobLower)
     );
 
-    const modules =
-      related.length > 0
-        ? [...new Set(related.map(x => x.module))].slice(0, 3)
-        : ["Buying", "Selling", "Accounting"];
-
-    /* build text context for GPT */
-    const context = related
+    const modules = [...new Set(related.map(r => r.module))].slice(0, 5);
+    const examples = related
       .slice(0, 30)
       .map(x => `${x.module} → ${x.label} (${x.route})`)
       .join("\n");
 
     const prompt = `
-You are a Frappe ERP coach.
+You are a Frappe ERP instructor.
+User: "${job}" in "${industry}" industry.
 
-User role: "${job}" in "${industry}" industry
-Relevant modules from Atlas:
-${modules.join(", ")}
+Relevant modules: ${modules.join(", ") || "Buying, Selling, Accounting"}
+Example features:
+${examples}
 
-Example routes:
-${context}
+1. What workflow should they learn first?
+2. Create a 5-step tutorial with selectors and plain English steps.
 
-Return exactly two lines:
+Return exactly this format:
 TUTORIAL: [step1|step2|step3|step4|step5]
 SELECTORS: [sel1|sel2|sel3|sel4|sel5]
 `;
@@ -62,23 +59,23 @@ SELECTORS: [sel1|sel2|sel3|sel4|sel5]
     const chat = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [{ role: "user", content: prompt }],
-      max_tokens: 250,
-      temperature: 0.2,
+      max_tokens: 300,
+      temperature: 0.25,
     });
 
-    const txt = chat.choices[0].message.content || "";
+    const text = chat.choices[0].message.content || "";
     const steps =
-      txt.match(/TUTORIAL:\s*\[(.*?)\]/i)?.[1]?.split("|").map(s => s.trim()) ||
+      text.match(/TUTORIAL:\s*\[(.*?)\]/i)?.[1]?.split("|").map(s => s.trim()) ||
       ["Go to Buying", "Click Purchase Order", "Click New", "Add Items", "Save"];
 
-    const sels =
-      txt.match(/SELECTORS:\s*\[(.*?)\]/i)?.[1]?.split("|").map(s => s.trim()) ||
+    const selectors =
+      text.match(/SELECTORS:\s*\[(.*?)\]/i)?.[1]?.split("|").map(s => s.trim()) ||
       ["[data-label='Buying']", "[data-label='Purchase Order']", "button.primary", "[placeholder*='Item']", "button:has-text('Save')"];
 
     const kw = s => s.replace(/[^\w\s]/g, "").split(/\s+/).pop();
     const keywords = steps.map(kw);
 
-    res.json({ tutorial: steps.slice(0, 5), selectors: sels.slice(0, 5), keywords });
+    res.json({ tutorial: steps.slice(0, 5), selectors: selectors.slice(0, 5), keywords });
   } catch (err) {
     console.error("❌ analyze-job error:", err);
     res.json({
@@ -89,10 +86,10 @@ SELECTORS: [sel1|sel2|sel3|sel4|sel5]
   }
 });
 
-/*────────────────  Utility endpoints  ────────────────*/
-app.get("/atlas", (req, res) => res.json(ATLAS));
+/*──────────  Utility endpoints  ──────────*/
+app.get("/atlas", (_, r) => r.json(ATLAS));
 app.get("/", (_, r) => r.send("✅  Frappe Guide Backend running"));
 
-/*────────────────  Start server  ────────────────*/
+/*──────────  Boot  ──────────*/
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`✅  Backend running on ${PORT}`));
